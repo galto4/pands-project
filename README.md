@@ -1,12 +1,17 @@
-# Project for 'Programming and Scripting'.
+## An Analysis of the Fisher Iris Data Set
 
 ###### Author: Mark Gallagher
+###### Module: Programming and Scripting (ATU)
 
 ***
 
 ### Section 1: About the Project (Overview)
 
 This repository contains my analysis of the Fisher Iris data set. 
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmlP5kPVYSNI04lQYiYbFI_Kxd1BXuwcQbIl4O4BgvQ&s" width=450>
+
+<sub><b>Figure 1: Iris Flower Botanical Painting by Kseniia Tikhomirova</b></sub> 
 
 ***
 
