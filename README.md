@@ -42,7 +42,7 @@ The analysis of the Fisher Iris data set was broken down into the following part
 
 If you would like to reproduce (and improve) this piece of analysis:
 
-- [Clone this repository](#) to your local machine.
+- [Clone this repository](#) containing the analysis files to your local machine.
 - Install the necessary technologies, including (but not limited to):
     - Anaconda - Navigator
     - Git
@@ -61,5 +61,8 @@ When I'm not studying, I am working full-time @ [ADP](https://www.adp.com/) as t
 ***
 
 ### Section 6: References (Research)
+
+- Fisher, R. A. (1936). The Use of Multiple Measurements in Taxonomic Problems. Annals of Eugenics, 7(2), 179–188. https://doi.org/10.1111/j.1469-1809.1936.tb02137.x
+- Fisher Iris Dataset. (n.d.). In UCI Machine Learning Repository. Retrieved from https://archive.ics.uci.edu/ml/datasets/iris
 
 ***
