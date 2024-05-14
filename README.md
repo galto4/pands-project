@@ -9,13 +9,13 @@
 
 This repository contains my analysis of the Fisher Iris data set. 
 
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmlP5kPVYSNI04lQYiYbFI_Kxd1BXuwcQbIl4O4BgvQ&s" width=450>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmlP5kPVYSNI04lQYiYbFI_Kxd1BXuwcQbIl4O4BgvQ&s" width=200>
 
 <sub><b>Figure 1: Iris Flower Botanical Painting by Kseniia Tikhomirova</b></sub> 
 
 ***
 
-### Section 2: About the Data Set
+### Section 2: About the Dataset
 
 The Fisher Iris data set was introduced by biologist [Sir Ronald Aylmer Fisher](https://www.britannica.com/biography/Ronald-Aylmer-Fisher) in 1936 as an example of discriminant analysis. It contains 50 samples from each of three species of Iris flowers (Iris Setosa, Iris Virginica and Iris Versicolor).
 <br><br>
