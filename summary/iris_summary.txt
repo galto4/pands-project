@@ -67,3 +67,22 @@ Name: count, dtype: int64
 
 The End
 
+Correlation Analysis
+
+1. Petal Length vs. Petal Width
+
+[[1.         0.96286543]
+ [0.96286543 1.        ]]
+
+Correlation Analysis
+
+1. Petal Length vs. Petal Width
+
+[[1.         0.96286543]
+ [0.96286543 1.        ]]
+
+2. Sepal Length vs. Sepal Width
+
+[[ 1.         -0.11756978]
+ [-0.11756978  1.        ]]
+
