@@ -7,7 +7,7 @@
 
 ### Section 1: About the Project (Overview)
 
-This repository contains my analysis of the Fisher Iris data set. 
+This repository contains my exploratory data analysis of the Fisher Iris data set, as part of the 'Programming & Scripting' module with ATU.
 
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBmlP5kPVYSNI04lQYiYbFI_Kxd1BXuwcQbIl4O4BgvQ&s" width=200>
 
@@ -17,6 +17,15 @@ This repository contains my analysis of the Fisher Iris data set.
 
 ### Section 2: About the Dataset
 
+1. <b>data.csv</b>:
+2. <b>iris.ipynb</b>: This Jupyter notebook contains all (Python) code use for the exploratory analysis of the Iris dataset. It also includes data exploration, data visualisation, data and statistical analysis, and references for my learning.
+3. <b>analyze.py</b>: This Python program includes all code required to (a) output a summary of each variable to a single text file, (b) save a histogram of each variable to png files, and (c) outputs a scatter plot of each pair of variables.
+4. <b>README.md</b>: This file (you're reading it) continue an overview of the repository, including the dataset, it's features, and the context behind the analysis.
+
+***
+
+### Section 3: About the Dataset
+
 The Fisher Iris data set was introduced by biologist [Sir Ronald Aylmer Fisher](https://www.britannica.com/biography/Ronald-Aylmer-Fisher) in 1936 as an example of discriminant analysis. It contains 50 samples from each of three species of Iris flowers (Iris Setosa, Iris Virginica and Iris Versicolor).
 <br><br>
 Four features were measured (from each of the samples); the length and width of sepal and petal (in cm). Based on the combination of the four features, Fisher developed a linear discriminant model to distinguish the species from one another.
@@ -25,34 +34,42 @@ Four features were measured (from each of the samples); the length and width of 
 
 ***
 
-### Section 3: Approach to Analysis
+### Section 4: Approach to Analysis
 
 The analysis of the Fisher Iris data set was broken down into the following parts:
 
 - <b>Import Libraries</b>: All important libraries (Pandas, NumPy, MatPlotLib) were loaded to to facilitate thorough investigation of the dataset.
-- <b>Load the Data</b>: The 'Palmer Penguins' data was then loaded into my notebook, and validate
-- <b>Inspect the Data</b>: The data was reviewed to check for data types and structure, missing cells, unique values, etc. 
-- <b>Data Variables</b>: A light review of the variable types to assess what type of analysis could be performed.
-- <b>Data Visualisation</b>: Using Histogram and Bar Charts to analyse and illustrate the dataset.
--<b>Correlation Analysis</b>: Analysis of how correlated data variables are across the dataset.
+- <b>Data Loading</b>: The 'Iris' data was then loaded from a CSV file which was created with my repository, and subsequently validated.
+- <b>Data Inspection</b>: The data was reviewed to check for data types and structure, missing cells, unique values, etc. 
+- <b>Data Visualisation</b>: Creation of visualisations such as bar charts, scatter plots, histograms, and pair plots to visualise the relationships between variables and across specific species.
+-<b>Correlation Analysis</b>: Analysis of how correlated data variables are across the Iris dataset.
 
 ***
 
-### Section 4: Usage
+### Section 5: Usage
 
 If you would like to reproduce (and improve) this piece of analysis:
 
-- [Clone this repository](#) containing the analysis files to your local machine.
-- Install the necessary technologies, including (but not limited to):
-    - Anaconda - Navigator
-    - Git
-    - Github
-    - Visual Studio Code
-- Run the Jpyter notebook 'iris.ipynb' to execute the analysis steps.
+- [Clone  or download this repository](https://github.com/galto4/pands-project.git) containing the analysis files to your local machine.
+- Ensure that you have Python and the required dependencies (below) installed on your machine.
+- Open (and run) the Jupyter notebook 'iris.ipynb' using Jupyter Notebook or Visual Studio Code.
+- Follow the steps outlined in the notebook to execute the code cells and perform the analysis.
 
 ***
 
-### Section 5: About Me (The Author)
+### Section 6: Dependencies
+
+The analysis code included in this repository requires the following dependencies:
+
+- Python
+- pandas
+- numpy
+- matplotlib
+- seaborn
+
+***
+
+### Section 6: About Me (The Author)
 
 My name is Mark Gallagher, and I am currently enrolled on the 'Higher Diploma in Science in Data Analytics' at [ATU](https://www.atu.ie/) on a part-time basis.
 
@@ -66,3 +83,5 @@ When I'm not studying, I am working full-time @ [ADP](https://www.adp.com/) as t
 - [Fisher Iris Dataset. (n.d.). In UCI Machine Learning Repository] (https://archive.ics.uci.edu/ml/datasets/iris)
 
 ***
+
+### The End
