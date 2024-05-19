@@ -1,4 +1,8 @@
-## An Analysis of the Fisher Iris Data Set
+## An Exploratory Analysis of the Fisher Iris Data Set
+
+<a target="_blank" href="https://colab.research.google.com/github/galto4/pands-project.git">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
 
 ###### Author: Mark Gallagher
 ###### Module: Programming and Scripting (ATU)
@@ -83,12 +87,30 @@ When I'm not studying, I am working full-time @ [ADP](https://www.adp.com/) as t
 
 ### Section 8: References (Research)
 
-- [Fisher, R. A. (1936). The Use of Multiple Measurements in Taxonomic Problems. Annals of Eugenics, 7(2), 179–188] (https://doi.org/10.1111/j.1469-1809.1936.tb02137.x)
-- [Fisher Iris Dataset. (n.d.). In UCI Machine Learning Repository] (https://archive.ics.uci.edu/ml/datasets/iris)
-- [Exploratory Data Analysis on Iris Dataset in Python] (https://flexiple.com/python/exploratory-data-analysis-on-iris-dataset)
+- [Fisher, R. A. (1936). The Use of Multiple Measurements in Taxonomic Problems. Annals of Eugenics, 7(2), 179–188](https://doi.org/10.1111/j.1469-1809.1936.tb02137.x)
+- [Fisher Iris Dataset. (n.d.). In UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/datasets/iris)
+- [Exploratory Data Analysis on Iris Dataset in Python](https://flexiple.com/python/exploratory-data-analysis-on-iris-dataset)
 - [Exploratory Data Analysis : Iris Dataset](https://medium.com/analytics-vidhya/exploratory-data-analysis-iris-dataset-4df6f045cda)
 - [Tutorial: Analysis of the Fisher Iris Dataset](https://www.idiap.ch/software/beat/docs/bob/docs/v7.0.0/example.html)
-- 
+- [Iris Dataset](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv)
+- [Iris Species](https://www.kaggle.com/datasets/uciml/iris)
+- [Iris](https://archive.ics.uci.edu/dataset/53/iris)
+- [Pandas DataFrame describe() Method](https://www.w3schools.com/python/pandas/ref_df_describe.asp)
+- [Pandas DataFrame shape Property](https://www.w3schools.com/python/pandas/ref_df_shape.asp)
+- [Pandas DataFrame info() Method](https://www.w3schools.com/python/pandas/ref_df_info.asp)
+- [Pandas DataFrame dtypes Property](https://www.w3schools.com/python/pandas/ref_df_dtypes.asp)
+- [Pandas DataFrame loc Property](https://www.w3schools.com/python/pandas/ref_df_loc.asp)
+-v[How to Modify a Text File in Python](https://www.askpython.com/python/built-in-methods/modify-text-file-python)
+- [Python File Write](https://www.w3schools.com/python/python_file_write.asp)
+- [matplotlib.pyplot.figure](https://matplotlib.org/stable/api/_as_gen/matplotlib.pyplot.figure.html)
+- [matplotlib.pyplot.figure() in Python](https://www.geeksforgeeks.org/matplotlib-pyplot-figure-in-python/)
+- [Python Histogram Plotting: NumPy, Matplotlib, pandas & Seaborn](https://realpython.com/python-histograms/)
+- [Creating Histograms using Pandas](https://mode.com/example-gallery/python_histogram)
+- [Matplotlib.pyplot.savefig() in Python](https://www.geeksforgeeks.org/matplotlib-pyplot-savefig-in-python/)
+- [How to Interpret Histograms](https://www.labxchange.org/library/items/lb:LabXchange:10d3270e:html:1)
+- [Visualizing Data in Python Using plt.scatter()](https://realpython.com/visualizing-python-plt-scatter/)
+- [Scatterplot Matrix](https://seaborn.pydata.org/examples/scatterplot_matrix.html)
+- [Multiple linear regression](https://seaborn.pydata.org/examples/multiple_regression.html)
 
 ***
 
