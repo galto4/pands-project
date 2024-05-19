@@ -4,8 +4,8 @@
   <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
 </a>
 
-###### Author: Mark Gallagher
-###### Module: Programming and Scripting (ATU)
+<sub><b>Author</b>: Mark Gallagher</sub><br>
+<sub><b>Module</b>: Programming and Scripting (ATU)</sub>
 
 ***
 
@@ -21,7 +21,7 @@ This repository contains my exploratory data analysis of the Fisher Iris data se
 
 ### Section 2: About the Dataset
 
-1. <b>data.csv</b>:
+1. <b>data.csv</b>: This CSV file contains the Iris dataset which was taken directly from [GitHub](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv) and created directly in my own repository.
 2. <b>iris.ipynb</b>: This Jupyter notebook contains all (Python) code use for the exploratory analysis of the Iris dataset. It also includes data exploration, data visualisation, data and statistical analysis, and references for my learning.
 3. <b>analyze.py</b>: This Python program includes all code required to (a) output a summary of each variable to a single text file, (b) save a histogram of each variable to png files, and (c) outputs a scatter plot of each pair of variables.
 4. <b>README.md</b>: This file (you're reading it) continue an overview of the repository, including the dataset, it's features, and the context behind the analysis.
