@@ -62,7 +62,7 @@ When I'm not studying, I am working full-time @ [ADP](https://www.adp.com/) as t
 
 ### Section 6: References (Research)
 
-- Fisher, R. A. (1936). The Use of Multiple Measurements in Taxonomic Problems. Annals of Eugenics, 7(2), 179–188. https://doi.org/10.1111/j.1469-1809.1936.tb02137.x
-- Fisher Iris Dataset. (n.d.). In UCI Machine Learning Repository. Retrieved from https://archive.ics.uci.edu/ml/datasets/iris
+- [Fisher, R. A. (1936). The Use of Multiple Measurements in Taxonomic Problems. Annals of Eugenics, 7(2), 179–188] (https://doi.org/10.1111/j.1469-1809.1936.tb02137.x)
+- [Fisher Iris Dataset. (n.d.). In UCI Machine Learning Repository] (https://archive.ics.uci.edu/ml/datasets/iris)
 
 ***
