@@ -48,6 +48,10 @@ The analysis of the Fisher Iris data set was broken down into the following part
 
 ### Section 5: Usage
 
+<a target="_blank" href="https://colab.research.google.com/github/galto4/pands-project.git">
+  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
+</a>
+
 If you would like to reproduce (and improve) this piece of analysis:
 
 - [Clone  or download this repository](https://github.com/galto4/pands-project.git) containing the analysis files to your local machine.
@@ -69,7 +73,7 @@ The analysis code included in this repository requires the following dependencie
 
 ***
 
-### Section 6: About Me (The Author)
+### Section 7: About Me (The Author)
 
 My name is Mark Gallagher, and I am currently enrolled on the 'Higher Diploma in Science in Data Analytics' at [ATU](https://www.atu.ie/) on a part-time basis.
 
@@ -77,10 +81,14 @@ When I'm not studying, I am working full-time @ [ADP](https://www.adp.com/) as t
 
 ***
 
-### Section 6: References (Research)
+### Section 8: References (Research)
 
 - [Fisher, R. A. (1936). The Use of Multiple Measurements in Taxonomic Problems. Annals of Eugenics, 7(2), 179–188] (https://doi.org/10.1111/j.1469-1809.1936.tb02137.x)
 - [Fisher Iris Dataset. (n.d.). In UCI Machine Learning Repository] (https://archive.ics.uci.edu/ml/datasets/iris)
+- [Exploratory Data Analysis on Iris Dataset in Python] (https://flexiple.com/python/exploratory-data-analysis-on-iris-dataset)
+- [Exploratory Data Analysis : Iris Dataset](https://medium.com/analytics-vidhya/exploratory-data-analysis-iris-dataset-4df6f045cda)
+- [Tutorial: Analysis of the Fisher Iris Dataset](https://www.idiap.ch/software/beat/docs/bob/docs/v7.0.0/example.html)
+- 
 
 ***
 
