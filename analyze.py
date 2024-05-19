@@ -29,7 +29,6 @@ iris = pd.read_csv('data.csv') # CSV file created and data loaded directly
 
 # Step 2.2. Present the first 5 rows to validate the data has been loaded
 iris_head = iris.head()
-print(iris_head)
 
 ##########################################################################
 
@@ -37,35 +36,28 @@ print(iris_head)
 
 # 4.1 - Get information about the dataset 
 iris_shape = iris.shape
-print(iris_shape)
 
 # 4.2 - Inspect the data types of each columns
 iris_dtypes = iris.dtypes
-print(iris_dtypes)
 
 # 4.3 - Describing the entire dataset
 iris_describe = iris.describe() 
 # This will give us a statistical overview of the data
-print(iris_describe)
 
 # 4.3.1 - Describing the 'Setosa' sub-set of data
 iris_setosa = iris.loc[iris["species"]=="setosa"]
 setosa_data = iris_setosa.describe()
-print(setosa_data)
 
 # 4.3.2 - Describing the 'Versicolor' sub-set of data
 iris_versicolor = iris.loc[iris["species"]=="versicolor"]
 versicolor_data = iris_versicolor.describe()
-print(versicolor_data)
 
 # 4.3.3 - Describing the 'Virginica' sub-set of data
 iris_virginica = iris.loc[iris["species"]=="virginica"]
 virginica_data = iris_virginica.describe()
-print(virginica_data)
 
 # 4.4 - Count the total number of each species in the dataset
 species_counts = iris.species.value_counts()
-print(species_counts)
 
 ##########################################################################
 
@@ -118,4 +110,14 @@ print("Congratulations! An image of the 'species' bar chart has been created!")
 
 ##########################################################################
 
-# Commands to run each query
+# Section 7: Data Visualisation (Histograms)
+
+##########################################################################
+
+# Section 8: Data Visualisation (Two Variable Plot)
+
+##########################################################################
+
+# Copy > Paste the following command to run the query:
+
+# python analyze.py
