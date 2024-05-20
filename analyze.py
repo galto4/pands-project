@@ -82,7 +82,7 @@ print("Congratulations! A data summary has been written to iris_summary.txt")
 
 # Section 6: Data Visualisation (Bar Chart)
 
-# Data visualisation of 'Species' in a bar chart
+# 'Species' Bar Chart
 
 # 6.1 - Define the bar colors for each species
 colors = ['#987b9b', '#ddb5bb', '#c2b5d9',]
@@ -102,8 +102,8 @@ plt.tight_layout()
 # 6.4 - Save the bar chart
 plt.savefig("./charts/species_bar-chart.png") # Save the bar chart as a .png file
 
-# 6.5 - Show the bar chart
-plt.show() # Display the plot
+# 6.5 - Close the plot
+plt.clf()
 
 # 6.6 - Confirmation message that the image file has been created
 print("Congratulations! An image of the 'species' bar chart has been created!")
@@ -112,9 +112,204 @@ print("Congratulations! An image of the 'species' bar chart has been created!")
 
 # Section 7: Data Visualisation (Histograms)
 
+# 7.1 - Sepal Length
+
+# Step 1: Create the Histogram
+plt.hist(iris['sepal_length'], bins=15, color='#987b9b', edgecolor='#392858')
+
+# Step 2: Style the Histogram
+plt.title("Sepal Length Histogram", size=8, color="#060505") # Set the title with specified font size and color
+plt.xlabel('Sepal Length', size=8) # x-axis label with specified font size
+plt.ylabel('Frequency', size=8) # y-axis label with specified font size
+plt.grid(axis='y', linestyle='--', alpha=0.7) # Add grid lines to the y-axis
+plt.tight_layout()
+
+# Step 3: Save the figure
+plt.savefig("./histograms/sepal_length.png") # Save the histogram as a png file
+
+# Step 4: Close the plot
+plt.clf()
+
+# Step 5: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'sepal length' histogram has been created!")
+
+###############
+
+# 7.2 - Sepal Width
+
+# Step 1: Create the Histogram
+plt.hist(iris['sepal_width'], bins=15, color='#c2b5d9', edgecolor='#392858')
+
+# Step 2: Style the Histogram
+plt.title("Sepal Width Histogram", size=8, color="#060505") # Set the title with specified font size and color
+plt.xlabel('Sepal Width', size=8) # x-axis label with specified font size
+plt.ylabel('Frequency', size=8) # y-axis label with specified font size
+plt.grid(axis='y', linestyle='--', alpha=0.7) # Add grid lines to the y-axis
+plt.tight_layout()
+
+# Step 3: Save the figure
+plt.savefig("./histograms/sepal_width.png") # Save the histogram as a png file
+
+# Step 4: Close the plot
+plt.clf()
+
+# Step 5: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'sepal width' histogram has been created!")
+
+###############
+
+# 7.3 - Petal Length
+
+# Step 1: Create the Histogram
+plt.hist(iris['petal_length'], bins=15, color='#ddb5bb', edgecolor='#392858')
+
+# Step 2: Style the Histogram
+plt.title("Petal Length Histogram", size=10, color="#060505") # Set the title with specified font size and color
+plt.xlabel('Petal Length', size=8) # x-axis label with specified font size
+plt.ylabel('Frequency', size=8) # y-axis label with specified font size
+plt.grid(axis='y', linestyle='--', alpha=0.7) # Add grid lines to the y-axis
+plt.tight_layout()
+
+# Step 3: Save the figure
+plt.savefig("./histograms/petal_length.png") # Save the histogram as a png file
+
+# Step 4: Close the plot
+plt.clf()
+
+# Step 5: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'petal length' histogram has been created!")
+
+###############
+
+# 7.4 - Petal Width
+
+# Step 2: Create the Histogram
+plt.hist(iris['petal_width'], bins=15, color='#866c46', edgecolor='#392858')
+
+# Step 3: Style the Histogram
+plt.title("Petal Width Histogram", size=10, color="#060505")
+plt.xlabel('Petal Width', size=8)
+plt.ylabel('Frequency', size=8)
+plt.grid(axis='y', linestyle='--', alpha=0.7) # Add grid lines to the y-axis
+plt.tight_layout()
+
+# Step 4: Save the figure
+plt.savefig("./histograms/petal_width.png")
+
+# Step 5: Close the plot
+plt.clf()
+
+# Step 5: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'petal width' histogram has been created!")
+
 ##########################################################################
 
 # Section 8: Data Visualisation (Two Variable Plot)
+
+###############
+
+# 8.1 - Petal Length vs. Petal Width
+
+# Step 1: Get just the Petal Length and Width
+plen = iris['petal_length'].to_numpy() # Converts dataframe to a NumPy array
+pwidth = iris['petal_width'].to_numpy() # Converts dataframe to a NumPy array
+
+# Step 2: Fit a straight line between X and Y
+m, c = np.polyfit(plen, pwidth, 1)
+
+# Step 3: Create a new figure and set of axis
+fig, ax = plt.subplots()
+
+# Step 4: Create a Simple Plot
+ax.plot(plen, pwidth, '*', color='#987b9b')
+ax.plot(plen, m * plen + c, 'r-')
+
+# Step 5: Add Axis labels and Title
+ax.set_xlabel('Petal Length (cm)', size=8)
+ax.set_ylabel('Petal Width (cm)', size=8)
+ax.set_title('Iris Data Set', size=10)
+
+# Step 6: Set X and Y Limits
+ax.set_xlim(0.0, 8.0)
+ax.set_ylim(-1.0, 4.0)
+
+# Step 7: Save the figure
+plt.savefig("./plots/plen-v-pwdith-best-fit.png")
+
+# Step 8: Close the Plot
+plt.clf()
+
+# Step 9: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'petal length vs. petal width best fit line' plot has been created!")
+
+###############
+
+# 8.1.2 - Measure the Correlation
+petalcorr = np.corrcoef(plen, pwidth) # Create a correlation matrix
+
+###############
+
+# 8.1.3 - Update Txt File
+
+# Step 1: Write the correlation matrix to our existing text file
+
+with open("./summary/iris_summary.txt", "a") as file: # Using the append mode
+    file.write(("Correlation Analysis\n\n"))
+    file.write(("1. Petal Length vs. Petal Width\n\n")+(str(petalcorr)+('\n\n')))
+
+# Step 2: Confirmation message that the file has been created
+print("Congratulations! You added the Correlation Analysis to the iris_summary.txt")
+
+###############
+
+# 8.2: Sepal Length vs. Sepal Width
+
+# Step 1: Get Sepal Length and Sepal Width
+slen = iris['sepal_length'].to_numpy() # Converts dataframe to a NumPy array
+swidth = iris['sepal_width'].to_numpy() 
+
+# Step 2: Fit a straight line between X and Y
+m, c = np.polyfit(slen, swidth, 1)
+
+# Step 3: Create a new figure and set of axis
+fig, ax = plt.subplots()
+
+# Step 4: Create a simple plot
+ax.plot(slen, swidth, '*', color='#ddb5bb')
+ax.plot(slen, m * slen + c, 'r-')
+
+# Step 5: Add Axis labels and Title
+ax.set_xlabel('Sepal Length (cm)', size=8)
+ax.set_ylabel('Sepal Width (cm)', size=8)
+ax.set_title('Iris Data Set', size=10)
+
+# Step 6: Set X and Y Limits
+ax.set_xlim(3.0, 9.0)
+ax.set_ylim(1.5, 5.0)
+
+# Step 7: Save the figure
+plt.savefig("./plots/slen-v-swdith-straight-line.png")
+
+# Step 8: Close the Plot
+plt.clf()
+
+# Step 9: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'sepal length vs. sepal with straight line' plot has been created!")
+
+###############
+
+# 8.2.2 - Measure the Correlation
+sepalcorr = np.corrcoef(slen, swidth) # Create a correlation matrix
+
+# 8.2.3 - Update Txt File
+# Step 1: Write the next correlation matrix to our existing text file
+
+with open("./summary/iris_summary.txt", "a") as file: # Using the append mode
+    file.write(("2. Sepal Length vs. Sepal Width\n\n")+(str(sepalcorr)+('\n\n')))
+
+# Step 2: Confirmation message that the file has been created
+print("Congratulations! You added another Correlation Analysis to the iris_summary.txt")
+
 
 ##########################################################################
 
