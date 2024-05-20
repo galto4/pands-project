@@ -1,3 +1,8 @@
+# An Explotary Data Analysis of the Fisher Iris Dataset
+# Author: Mark Gallagher
+
+###############
+
 # Section 1: Introduction
 
 # The Fisher Iris data set was introduced by biologist Sir Ronald Aylmer Fisher 
@@ -19,6 +24,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import warnings
 
 ##########################################################################
 
@@ -103,7 +109,7 @@ plt.tight_layout()
 plt.savefig("./charts/species_bar-chart.png") # Save the bar chart as a .png file
 
 # 6.5 - Close the plot
-plt.clf()
+plt.clf() # Adding this to close out each plot and not impact the next
 
 # 6.6 - Confirmation message that the image file has been created
 print("Congratulations! An image of the 'species' bar chart has been created!")
@@ -310,6 +316,110 @@ with open("./summary/iris_summary.txt", "a") as file: # Using the append mode
 # Step 2: Confirmation message that the file has been created
 print("Congratulations! You added another Correlation Analysis to the iris_summary.txt")
 
+
+##########################################################################
+
+# Section 9: Experimenting with Seaborn Library
+
+###############
+
+# 9.1 - Scatter Plot (Petal Length vs. Petal Width)
+
+# Step 1: Create Scatter Plot
+plt.figure(figsize=(16,9))
+sns.scatterplot(data=iris, x='petal_length', y='petal_width', hue='species')
+
+# Step 2: Add Title and Labels
+plt.title('Petal Length vs. Petal Width', size='10')
+plt.xlabel('Petal Length (cm)', size='8')
+plt.ylabel('Petal Width (cm)', size='8')
+
+# Step 3: Save the Scatter Plot
+plt.savefig("./seaborn/plen-v-pwidth-seaborn-scatter.png") # Save the plot as a .png file
+
+# Step 4: Close the Plot
+plt.clf()
+
+# Step 5: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'seaborn plen vs pwdith scatter plot' has been created!")
+
+###############
+
+# 9.2 - Scatter Plot (Sepal Length vs. Sepal Width)
+
+# Step 1: Create Scatter Plot
+plt.figure(figsize=(16,9))
+sns.scatterplot(data=iris, x='sepal_length', y='sepal_width', hue='species')
+
+# Step 2: Add Title and Labels
+plt.title('Sepal Length vs. Sepal Width', size='10')
+plt.xlabel('Sepal Length (cm)', size='8')
+plt.ylabel('Sepal Width (cm)', size='8')
+
+# Step 3: Save the Scatter Plot
+plt.savefig("./seaborn/slen-v-swidth-seaborn-scatter.png") # Save the plot as a .png file
+
+# Step 4: Close the Plot
+plt.clf()
+
+# Step 5: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'seaborn slen vs swdith scatter plot' has been created!")
+
+###############
+
+# 9.3 - Pair Plot
+
+# Step 1: Create Pair Plot
+sns.pairplot(iris, hue='species')
+
+# Step 2: Save the Pair Plot
+plt.savefig("./seaborn/iris-pair-plot.png") # Save the plot as a .png file
+
+# Step 3: Close the Plot
+plt.clf()
+
+# Step 4: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'iris pair plot' has been created!")
+
+###############
+
+# 9.4 - Multiple Linear Regression (Petal Length vs. Petal Width)
+
+# Step 1: Create the Plot
+g = sns.lmplot(data=iris, x="petal_length", y="petal_width", hue="species", height=5)
+g.set_axis_labels("Petal Length", "Petal Width")
+
+# Step 2: Add a Dark Grid
+sns.set_style("darkgrid")
+
+# Step 3: Save the Plot
+plt.savefig("./seaborn/plen-vs-pwdith-lmplot.png") # Save the plot as a .png file
+
+# Step 4: Close the Plot
+plt.clf()
+
+# Step 5: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'plen vs pwdith lmplot' has been created!")
+
+###############
+
+# 9.5 - Multiple Linear Regression (Sepal Length vs. Sepal Width)
+
+# Step 1: Create the Plot
+g = sns.lmplot(data=iris, x="sepal_length", y="sepal_width", hue="species", height=5)
+g.set_axis_labels("Sepal Length", "Sepal Width")
+
+# Step 2: Add a Dark Grid
+sns.set_style("darkgrid")
+
+# Step 3: Save the Plot
+plt.savefig("./seaborn/slen-vs-swdith-lmplot.png") # Save the plot as a .png file
+
+# Step 4: Close the Plot
+plt.clf()
+
+# Step 5: Confirmation message that the image file has been created
+print("Congratulations! An image of the 'slen vs swdith lmplot' has been created!")
 
 ##########################################################################
 
