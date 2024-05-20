@@ -79,7 +79,6 @@ with open("./summary/iris_summary.txt", "w") as file:
     file.write(("4. Versicolor Summary\n\n")+(str(versicolor_data)+('\n\n')))
     file.write(("5. Virginica Summary\n\n")+(str(virginica_data)+('\n\n')))
     file.write(("6. Species Summary\n\n")+(str(species_counts)+('\n\n')))
-    file.write(("The End\n\n"))
 
 # 5.2. Confirmation message that the file has been created
 print("Congratulations! A data summary has been written to iris_summary.txt")
@@ -312,6 +311,7 @@ sepalcorr = np.corrcoef(slen, swidth) # Create a correlation matrix
 
 with open("./summary/iris_summary.txt", "a") as file: # Using the append mode
     file.write(("2. Sepal Length vs. Sepal Width\n\n")+(str(sepalcorr)+('\n\n')))
+    file.write(("The End\n\n"))
 
 # Step 2: Confirmation message that the file has been created
 print("Congratulations! You added another Correlation Analysis to the iris_summary.txt")
