@@ -29,8 +29,7 @@ import warnings
 ###############
 
 # Suppress UserWarnings
-with warnings.catch_warnings():
-    warnings.filterwarnings("ignore", category=UserWarning, message=".*figure layout has changed to tight.*")
+warnings.filterwarnings("ignore") # Not recommended, but couldn't get other options to work
 
 ##########################################################################
 
