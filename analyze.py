@@ -26,6 +26,12 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import warnings
 
+###############
+
+# Suppress UserWarnings
+with warnings.catch_warnings():
+    warnings.filterwarnings("ignore", category=UserWarning, message=".*figure layout has changed to tight.*")
+
 ##########################################################################
 
 # Section 3: Load the Data
